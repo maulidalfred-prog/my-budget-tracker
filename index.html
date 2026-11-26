@@ -21,7 +21,7 @@
 
 
        
-        <form>
+        <form id="expense-form">
         <label for="expense-name">Expense Name</label>
         <input type="text" id="expense-name">
 
@@ -38,7 +38,7 @@
             <option value="other">Other</option>
         </select>
 
-        <button type="button">Add Expense</button>
+        <button type="submit">Add Expense</button>
         </form>
 
     </section>
@@ -57,7 +57,7 @@
                 </tr>
 
             </thead>
-            <tbody>
+            <tbody id="expense-list">
                 
             <tr>
                 <td>Books</td>
@@ -100,10 +100,12 @@
             </tbody>
                 
         </table>
+        <h3 id="total-expenses">Total Expenses: Ksh. 0</h3>
         <details>
             <summary>How to use this tracker:</summary>
             <p>Enter the name of your expense, enter the amount, choose a category, and click the Add Expense button. Your expenses can then be viewed in the table.</p>
         </details>
     </section>
+    <script src="script.js"></script>
 </body>
 </html>
